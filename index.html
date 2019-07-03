@@ -3,10 +3,21 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -16,6 +27,7 @@
 
 		<p>Celebrating our <sup>11""</sup> Year</p>
 	</header>
+	<nav id="moblie menu"></nav>
 <nav id ="nav_menu">
 	<ul>
 		<li><a href="index.html" class="current">Home</a></li>

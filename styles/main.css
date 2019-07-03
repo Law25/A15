@@ -64,6 +64,8 @@ header{
 
 header img {
 	float: left;
+	max-width: 40%;
+	min-width: 150px;
 }
 
 	h2{
@@ -133,6 +135,17 @@ main {
 footer{
 	background-color: #931420;
 	color: #FFFFFF;
+}
+
+moblie_menu{
+	display: none;
+}
+@media only screen and (max-width: 959px) {
+	#nav_menu ul li a { font-size: .875em; }  /* 14 ÷ 16 */
+	section h1, article h1 { font-size: 1.5em; }
+	/* 24 ÷ 16 */
+	section h2, aside h2 { font-size: 1.125em; }
+	/* 18 ÷ 16 */
 }
 
 
